@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.navBar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navBar ul li {
+    float: left;
+    font-size: 2em;
+}
+
+.navBar ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.8vw;
+    text-decoration: none;
+}
+
+.navBar ul li a:hover {
+    background-color: #555555;
+  }
+ 
+.navBar .active{
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 5px;   
+}
+
+
