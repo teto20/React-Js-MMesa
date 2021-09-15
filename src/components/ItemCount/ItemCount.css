@@ -1,0 +1,14 @@
+.contenedorBtns {
+    display: flex;   
+}
+
+.cantidad {
+    text-align: center;
+    width: 4vw;
+    font-size: 1.3em;
+}
+
+.btnItemCount {
+    width: 1.5vw;
+    font-size: 1.3em;
+}
