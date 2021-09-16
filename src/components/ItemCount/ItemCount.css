@@ -1,5 +1,6 @@
 .contenedorBtns {
     display: flex;   
+    margin-left: 1vw;
 }
 
 .cantidad {
@@ -11,4 +12,12 @@
 .btnItemCount {
     width: 1.5vw;
     font-size: 1.3em;
+}
+
+.btnAddToCart {
+    margin-top: 2vh;
+    margin-left: 1vw;
+    width: 7vw;
+    height: 6vh;
+    font-size: 0.9em;
 }

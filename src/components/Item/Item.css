@@ -1,0 +1,49 @@
+.itemCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+    width: 15vw;
+}
+
+.itemCardImg {
+    height: 20vh;
+    margin-top: 1vh;
+}
+
+.itemCardBody {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+.itemCardTitle {
+    margin-bottom: 1vh;
+    text-align: center;
+    height: 4vh;
+
+}
+
+.itemCardDesc {
+    margin-bottom: 1vh;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    text-align: center;
+}
+
+.itemCardPrice {
+    margin-bottom: 1vh;
+}
+
+.itemCardBtn {
+    font-size: 1em;
+    padding: 0.8vh;
+    margin-bottom: 1vh;
+}
