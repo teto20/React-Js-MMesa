@@ -11,7 +11,12 @@ const ItemList = (props) => {
                 <div className="preloader">
                     <img src={spinner} alt="spinner" />
                 </div>
-: null}
+            : null}
+
+            {props.error && 
+            <p>Hubo un error: {props.error.status} {props.error.statusText}</p>
+            }
+            
             {props.productList?.map((producto) => {
                 return (
                     <Item 

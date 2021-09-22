@@ -1,0 +1,174 @@
+{
+    "productos": [
+      {
+        "id": 0,
+        "title": "Prensa Francesa", 
+        "description":"Apreciado por conocedores del café de todo el mundo, el icónico sistema de preparación por cafetera de émbolo de Bodum ofrece simplicidad de preparación y pureza de sabor. La cafetera francesa JAVA tiene un diseño icónico y de estilo retro con todas las cualidades modernas necesarias para producir un café rico y lleno de sabor.", 
+        "image":"https://m.media-amazon.com/images/I/61b6-G1uUeL._AC_SY879_.jpg", 
+        "price":1250
+    },
+    {
+        "id": 1, 
+        "title": "Jarra Hario Server", 
+        "description":"Esta jarra server 02 V60 es un servidor de café adaptable a cualquiera de los dripper de la misma medida 02 Hario (también disponibles en la página). Incorpora líneas de medición que facilitan la preparación de la cantidad justa. Apto para microondas con o sin tapa.", 
+        "image":"https://m.media-amazon.com/images/I/91q-XwGir2L._AC_SX679_.jpg", 
+        "price":1090
+    },
+    {
+        "id": 2, 
+        "title": "Cafetera de filtrado Bodum Pour Over", 
+        "description":"La Cafetera manual de filtro Pour Over Bodum es la clave para hacer un café más intenso y potente desde la comodidad de tu hogar. Su estética basada en el diseño es un complemento atractivo para cualquier cocina. Fabricada con vidrio de borosilicato de calidad superior que no absorbe el sabor o el aroma, la jarra de bello modelado está equipada con un filtro permanente de acero inoxidable para una preparación realmente sostenible. Sin desperdiciar filtros de papel que atrapan los aceites esenciales y el sabor; solo café puro con toda su intensidad.", 
+        "image":"https://m.media-amazon.com/images/I/61GR+XZqvOL._AC_SX679_.jpg", 
+        "price":2190
+    },
+    {
+        "id": 3, 
+        "title": "Cafetera Aeropress", 
+        "description":"La cafetera AeroPress es un dispositivo para preparar café inventado en 2005 por el estadounidense Alan Adler. Su estructura está formada por dos cilindros de plástico que juntos funcionan como una jeringuilla que introduce aire a presión sobre la mezcla de agua y café molido para filtrar el café a través de un filtro de papel o de metal cilíndrico.", 
+        "image":"https://m.media-amazon.com/images/I/516+xZjY0UL._AC_SX679_.jpg", 
+        "price":2790
+},
+    {
+        "id": 4, 
+        "title": "Cafetera Sifón + Mechero", 
+        "description":"Hacer café con esta cafetera al vacío es una experiencia espectacular y emocionante. El antiguo proceso de elaboración de café con sifón lleva el espectáculo cafetero a su máxima expresión. En él, el arte y la ciencia se mezclan con un toque de magia para desafiar la gravedad. Pero no todo es espectáculo: la cafetera extrae los aceites esenciales del café, ya molido, para crear una bebida limpia, equilibrada y llena de sabor con un aroma robusto.", 
+        "image":"https://m.media-amazon.com/images/I/61L3qoTLnVL._AC_SX679_.jpg", 
+        "price":12500
+},
+    {
+        "id": 5, 
+        "title": "Cafetera de espresso Flair Classic", 
+        "description":"La cafetera de espresso Flair es un artículo revolucionario para todo amante del espresso ¿Por qué? Porque nos permite disfrutar de un espresso de calidad donde sea que estemos, en casa, de vacaciones o en mitad del bosque. Lo único que necesitaremos será un molinillo (o el café ya molido) y agua caliente, la magia la hace sola!", 
+        "image":"https://m.media-amazon.com/images/I/710uKye7lIL._AC_SX679_.jpg", 
+        "price":12600
+},
+    {
+        "id": 6, 
+        "title": "Cafetera Prensa Francesa Cold Brew Bodum Bistro Nouveau", 
+        "description":"Este modelo de prensa francesa tiene un estilo moderno y minimalista con una sencilla banda de acero inoxidable que rodea la jarra, acentuada con una tapa y un asa de plástico negro. La jarra está fabricada con vidrio de borosilicato resistente al calor que no alterará ni perjudicará el sabor de tu deliciosa taza de café, mientras que el émbolo de acero inoxidable extrae el máximo sabor de tus granos.", 
+        "image":"https://m.media-amazon.com/images/I/71qipRLK7nL._AC_SX679_.jpg", 
+        "price":2290
+},
+{
+        "id": 7, 
+        "title": "Cafetera Cold Brew Frank One", 
+        "description":"Esta cafetera Cold Brew portátil se caracteriza por obtener un resultado con mucho cuerpo, dulce y balanceado por su tecnología VacTec™ que reduce el amargor del café. A través del vacío acelera la extracción para lograr una intensa taza de Cold Brew en solo 4 minutos.", 
+        "image":"https://m.media-amazon.com/images/I/61nx33CGj0S._AC_SX679_.jpg", 
+        "price":8360
+},
+    {
+        "id": 8, 
+        "title": "Dripper V60 Hario Plástico", 
+        "description":"Este dripper V60 Hario está hecho en plástico de muy buena calidad y diseño icónico en un rojo punzó. El dripper se puede colocar tanto en la jarra Hario de la medida 02 como en cualquier taza directo para tomar. Incluye también una cuchara medidora para medir los gramos de café que vertemos sobre la cafetera.", 
+        "image":"https://m.media-amazon.com/images/I/61Ct2LDoMiL._AC_SX679_.jpg", 
+        "price":850
+},
+    {
+        "id": 9, 
+        "title": "Molinillo de café eléctrico de aspas Bodum", 
+        "description":"El café que mejor sabe procede de granos recién molidos. Este molinillo de café nos permite preparar una taza de café aromático rebosante de sabor. La incorporación ideal para tu rutina cafetera", 
+        "image":"https://m.media-amazon.com/images/I/81CQH1GiBtL._AC_SX679_.jpg", 
+        "price":4290
+},
+    {
+        "id": 10, 
+        "title": "Molinillo de café de muelas 12 Ajustes Bodum", 
+        "description":"Los amantes del café saben que muchas cosas contribuyen al sabor de su taza de café favorito, como el método y la temperatura de preparación. Pero lo más importante es la frescura de los granos. Libera el potencial de tus granos de café con el molinillo de café de muelas BISTRO.", 
+        "image":"https://m.media-amazon.com/images/I/61q-mNkZHqL._AC_SX679_.jpg", 
+        "price":9270
+},
+    {
+        "id": 11, 
+        "title": "Molinillo de café de muelas manual Hario Smart G", 
+        "description":"Este molinillo manual Hario es un molinillo de muelas de cerámica super compacto, es perfecto para viajes o uso doméstico. Las muelas de cerámica cónicas transfieren menos calor y raspan los granos de café en lugar de romperlos como molinillos de cuchillas. Este proceso también proporciona un molido más consistente que se puede ajustar fácilmente o configurar para un uso repetido.", 
+        "image":"https://m.media-amazon.com/images/I/71eBibyUbvL._AC_SX679_.jpg", 
+        "price":4990
+},
+    {
+        "id": 12, 
+        "title": "Molinillo de café de muelas manual Hario Skerton Pro", 
+        "description":"El molino  Hario Skerton Pro es un molinillo de uso manual con muelas cónicas fabricadas en material cerámico. Con esto conseguiremos que los granos queden molidos de forma uniforme y por tanto logremos conseguir una taza equilibrada capacidad: hasta 100 g", 
+        "image":"https://m.media-amazon.com/images/I/51ejiOLYFCL._AC_SX679_.jpg", 
+        "price":5990
+},
+    {
+        "id": 13, 
+        "title": "Espumador de leche manual Bodum Latteo", 
+        "description":"Disfruta de un momento de indulgencia gracias a este espumador de cristal para leche LATTEO. Este ingenioso y pequeño aparato aporta el toque final a tu café con su rica y sabrosa espuma.", 
+        "image":"https://m.media-amazon.com/images/I/814HjtbHg+L._AC_SX679_.jpg", 
+        "price":2460
+},
+    {
+        "id": 14, 
+        "title": "Espumador de leche eléctrico Bodum Bistro", 
+        "description":"Transforma tu taza diaria de café en una especialidad de cafetería con nuestro espumador de leche Bodum BISTRO. Este mágico espumador garantiza que todas tus bebidas favoritas estarán al alcance de tu mano, cuando te apetezcan.", 
+        "image":"https://m.media-amazon.com/images/I/71gRKdca4sL._AC_SX679_.jpg", 
+        "price":7250
+},
+    {
+        "id": 15, 
+        "title": "Caldera eléctrica cuello de cisne Bodum Melior 0,8L", 
+        "description":"Esta caldera eléctrica es una herramienta esencial para los conocedores del café. El hervidor de agua de cuello de cisne MELIOR es la clave para disfrutar de un café excepcional en casa. Diseñado especialmente para verter con precisión, es la caldera ideal para el café por goteo.", 
+        "image":"https://m.media-amazon.com/images/I/71iBRcNOaWL._AC_SX679_.jpg", 
+        "price":6290
+},
+    {
+        "id": 16, 
+        "title": "Set x2 vasos porcelana y corcho Bodum", 
+        "description":"Dale vida a tu colección de vasos con este juego de tazas de porcelana con funda de corcho. Estos vasos de pared simple están envueltos en una banda de corcho que los hace fáciles de agarrar y protege sus dedos cuando maneja líquidos calientes.", 
+        "image":"https://m.media-amazon.com/images/I/912qDAkY5bL._AC_SX679_.jpg", 
+        "price":1260
+},
+    {
+        "id": 17, 
+        "title": "Set x2 vasos vidrio y corcho Bodum", 
+        "description":"Cuando la elegancia y la practicidad son necesarias con respeto al medio ambiente. Cualquier producto puede ser el lema de la marca, que, para saber que un diseño exitoso tiene que ser simple y funcional al mismo tiempo? Este hermoso juego de 2 tazas Pavina con corcho al mismo tiempo un experto y el amante de la naturaleza en usted amará. La tira de corcho natural de los bosques mediterráneos adyacentes a nuestra Planta es un muy buen agarre y sobre todo para evitar quemarse los dedos durante los que disfrutan de su bebida caliente favorita. El vidrio está hecho de borosilicato de alta calidad, resistente al calor (hasta 350 grados) e inodoro (no tomar el sabor de alimentos o bebidas.", 
+        "image":"https://m.media-amazon.com/images/I/61X4IIja78L._AC_SX679_.jpg", 
+        "price":1550
+},
+    {
+        "id": 18, 
+        "title": "Set x6 Vasos Bodum Pavina Outdoor 250mL", 
+        "description":"Diseñados especialmente para uso en exteriores, el juego de vasos de doble pared PAVINA OUTDOOR es un complemento estiloso para incorporar a tu equipo de barbacoa y picnic. Claros como el agua para la vista y ligeros para el tacto, los vasos aportan la belleza y la claridad del cristal pero no su fragilidad.", 
+        "image":"https://m.media-amazon.com/images/I/61LvFPW3ssL._AC_SX679_.jpg", 
+        "price":1960
+},
+    {
+        "id": 19, 
+        "title": "Set x2 Vasos Capuccino Bodum Titlis 0,35L", 
+        "description":"Las ocasiones especiales merecen cristalerías especiales. Los vasos  para capuccino de doble pared TITLIS son un acierto seguro para sorprender a tus invitados. Estos elegantes vasos llaman la atención por su diseño exclusivo y su novedosa estructura de doble pared, la cual crea una ilusión óptica al ver el contenido flotando sutilmente en el aire.", 
+        "image":"https://m.media-amazon.com/images/I/71ZP-F0Tv1L._AC_SX679_.jpg", 
+        "price":1830
+}
+    ],
+
+    "categorias": [
+      { "id": 0, "name": "Metodos" },
+      { "id": 1, "name": "Esenciales" },
+      { "id": 2, "name": "Infusiones" },
+      { "id": 3, "name": "Accesorios" },
+      { "id": 4, "name": "Maquinas" },
+      { "id": 5, "name": "Cafés" }
+    ],
+
+    "subCategorias": [
+        { "id": 0, "name": "Filtrados" },
+        { "id": 1, "name": "Prensa Francesa" },
+        { "id": 2, "name": "Sifón" },
+        { "id": 3, "name": "Cold Brew" },
+        { "id": 4, "name": "Espresso Manual" },
+        { "id": 5, "name": "Filtros y Repuestos" },
+        { "id": 6, "name": "Molinillos" },
+        { "id": 7, "name": "Calderas" },
+        { "id": 8, "name": "Espumadores de Leche" },
+        { "id": 9, "name": "Teteras" },
+        { "id": 10, "name": "Jarras y Dispensadores" },
+        { "id": 11, "name": "Vasos y Tazas" },
+        { "id": 12, "name": "Mugs y Prensas" },
+        { "id": 13, "name": "Espresso" },
+        { "id": 14, "name": "Molinos de Café" },
+        { "id": 15, "name": "Otras Maquinas" },
+        { "id": 16, "name": "Café de Especialidad" },
+        { "id": 17, "name": "Café Comercial" }
+      ]
+  }
