@@ -21,6 +21,7 @@ const ItemList = (props) => {
                 return (
                     <Item 
                         key={producto.id}
+                        id= {producto.id}
                         title={producto.title}
                         description={producto.description}
                         image={producto.image}

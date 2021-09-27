@@ -1,11 +1,13 @@
 import * as React from 'react';
 import "./ItemDetail.css";
 import spinner from "../../Media/spinner.svg"
+import ItemImgGallery from '../ItemImgGallery/ItemImgGallery';
+import ItemDetailContent from '../ItemDetailContent/ItemDetailContent';
 
 const ItemDetail = (props) => {
-
+    console.log(`ItemDetail  + ${JSON.stringify(props)}`)
     return (
-        <div className="itemDetail">
+        <div className="card-wrapper">
             {props.loader ? 
                 <div className="preloader">
                     <img src={spinner} alt="spinner" />
@@ -17,20 +19,9 @@ const ItemDetail = (props) => {
             }
             
             {props.product && 
-                <div classname="contenedorItemDetail">
-                    <div className="contenedorContenidoPrincipal">
-                        <aside className="itemDetailImgContainer">
-                            <img src={props.product.image} alt={props.product.title} />
-                        </aside>
-                        <div className="itemDetailTitlePrice"> 
-                            <h1>{props.product.title}</h1>
-                            <h3>{`$ ${props.product.price}`}</h3>
-                        </div>
-                    </div>
-                    <article>
-                        <h3>Descripcion</h3>
-                        <p>{props.product.description}</p>
-                    </article>
+                <div className="card">
+                            <ItemImgGallery product={props.product} />
+                            <ItemDetailContent product={props.product} />
                 </div>
 
             }

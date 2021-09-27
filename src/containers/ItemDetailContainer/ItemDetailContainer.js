@@ -2,26 +2,13 @@ import * as React from "react";
 import ItemDetail from "../../components/ItemDetail/ItemDetail";
 import "./ItemDetailContainer.css";
 
-const ItemDetailContainer = () => {
-    const[item, setItem] = React.useState({});
-    const [cargando, setCargando] = React.useState(false);
-    const [error, setError] =  React.useState(null);
-
-    React.useEffect(() => {
-
-        setCargando(true);
-        fetch(`http://localhost:3001/productos/1`)
-            .then((response) => response.json())
-            .then((data) => setItem(data))
-            .catch((error) => setError(error))
-            .finally(() => setCargando(false));
-    }, []);
-
+const ItemDetailContainer = (props) => {
     return (
         <div className="itemDetailContainer">
-            <ItemDetail product={item} loader={cargando} error={error} />
+            <ItemDetail product={props.item} loader={props.cargando} error={props.error} />
         </div>
     );
+    
 }
 
 export default ItemDetailContainer;

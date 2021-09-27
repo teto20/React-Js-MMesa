@@ -7,6 +7,8 @@
     width: 15vw;
     margin-bottom: 2vh;
     margin-left: 1vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
 }
 
 .itemCardImg {
@@ -37,8 +39,6 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
     text-align: center;
 }
 

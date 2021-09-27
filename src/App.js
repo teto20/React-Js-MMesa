@@ -1,20 +1,30 @@
 import "./App.css";
-import ItemListContainer from "./containers/ItemListContainer/ItemListContainer";
+import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
-import ItemDetailContainer from "./containers/ItemDetailContainer/ItemDetailContainer";
+import {BrowserRouter, Route, Switch} from "react-router-dom"
+import Home from "./components/pages/Home";
+import Tienda from "./components/pages/Tienda";
+import Nosotros from "./components/pages/Nosotros";
+import NotFound from "./components/pages/NotFound";
+import ProductoDetail from "./components/pages/ProductDetail";
 
 function App () {
   return (
-    <div className="App">
-      <NavBar />
-      <ItemDetailContainer />
-      <ItemListContainer name="usuario de prueba" /> 
-      
-    </div>
+    <BrowserRouter>
+        <NavBar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/tienda" component={Tienda} />
+          <Route exact path="/nosotros" component={Nosotros} />
+          <Route exact path="/product/:id" component={ProductoDetail} />
+          <Route path="*" component={NotFound} />
+        </Switch>
+        <Footer />
+    </BrowserRouter>
   );
 };
 
 export default App;
 
 //import ItemCount from "./components/ItemCount/ItemCount";
-//<ItemCount stock="9" initial={1} />
+//<ItemListContainer name="usuario de prueba" /> 
