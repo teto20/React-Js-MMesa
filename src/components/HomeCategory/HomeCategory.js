@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./HomeCategory.css"
 import spinner from "../../Media/spinner.svg"
+import {Link} from 'react-router-dom'
 
 const HomeCategory = (props) => {
 
@@ -25,12 +26,12 @@ const HomeCategory = (props) => {
             {props.categoryList?.map((category) => {
                 return (
                     <div className="categoryCard" key={category.id}>
-                        <a className="categoryLink" href="default.asp" target="_blank">
+                        <Link to = {`/category/${category.id}`} className="categoryLink">
                         <img className="categoryImg" src={category.image} alt={category.name}/>
                             <div className="categoryBody">
                                 <p>{category.name}</p>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                     
                 )

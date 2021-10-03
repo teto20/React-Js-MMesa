@@ -2,13 +2,13 @@ import * as React from "react";
 import ItemList from "../../components/ItemList/ItemList";
 import "./ItemListContainer.css";
 
-const ItemListContainer = () => {
+const ItemListContainer = (prop) => {
     const[items, setItems] = React.useState([]);
     const [cargando, setCargando] = React.useState(false);
     const [error, setError] =  React.useState(null);
 
     React.useEffect(() => {
-        const url="http://localhost:3001/productos";
+        const url = prop.category ? `http://localhost:3001/productos?category=${prop.category}` : `http://localhost:3001/productos`;
 
         setCargando(true);
         fetch(url)
@@ -22,7 +22,7 @@ const ItemListContainer = () => {
             .then((items) => setItems(items))
             .catch((error) => setError(error))
             .finally(() => setCargando(false));
-    }, []);
+    }, [prop.category]);
 
     return (
         <div className="itemListContainer">
@@ -32,3 +32,5 @@ const ItemListContainer = () => {
 } 
 
 export default ItemListContainer;
+
+//const url='http://localhost:3001/productos';

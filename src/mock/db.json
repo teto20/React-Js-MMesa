@@ -7,7 +7,8 @@
         "image":"https://m.media-amazon.com/images/I/61b6-G1uUeL._AC_SY879_.jpg", 
         "images":["https://m.media-amazon.com/images/I/61b6-G1uUeL._AC_SY879_.jpg", "https://m.media-amazon.com/images/I/61N2FhnAdhL._AC_SX679_.jpg", "https://m.media-amazon.com/images/I/81tx6wCB+7L._AC_SX679_.jpg", "https://m.media-amazon.com/images/I/71xMogi7toL._AC_SX679_.jpg"], 
         "price":1250,
-        "stock": 20
+        "stock": 20,
+        "category":0
     },
     {
         "id": 1, 
@@ -16,7 +17,8 @@
         "image":"https://m.media-amazon.com/images/I/91q-XwGir2L._AC_SX679_.jpg",
         "images":["https://m.media-amazon.com/images/I/91q-XwGir2L._AC_SX679_.jpg", "https://m.media-amazon.com/images/I/71g55FuuhHL._AC_SX679_.jpg", "https://m.media-amazon.com/images/I/71qahx657HL._AC_SX679_.jpg", "https://m.media-amazon.com/images/I/61hC7vGPSDL._AC_SX679_.jpg"],
         "price":1090,
-        "stock": 20
+        "stock": 32,
+        "category":0
     },
     {
         "id": 2, 
@@ -25,7 +27,8 @@
         "image":"https://m.media-amazon.com/images/I/61GR+XZqvOL._AC_SX679_.jpg", 
         "images":["https://m.media-amazon.com/images/I/61GR+XZqvOL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61WvWMHz7lL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/71lGncY4xzL._AC_SX679_.jpg", "https://m.media-amazon.com/images/I/61GR+XZqvOL._AC_SX679_.jpg"],
         "price":2190,
-        "stock": 20
+        "stock": 1,
+        "category":0
     },
     {
         "id": 3, 
@@ -34,7 +37,8 @@
         "image":"https://m.media-amazon.com/images/I/516+xZjY0UL._AC_SX679_.jpg", 
         "images":["https://m.media-amazon.com/images/I/516+xZjY0UL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/71g1yMzBkdL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/71OfTjB4jpL._AC_SY879_.jpg","https://m.media-amazon.com/images/I/714s-zHOdAL._AC_SY879_.jpg"],
         "price":2790,
-        "stock": 20
+        "stock": 8,
+        "category":0
 },
     {
         "id": 4, 
@@ -43,7 +47,8 @@
         "image":"https://m.media-amazon.com/images/I/61L3qoTLnVL._AC_SX679_.jpg", 
         "images":["https://m.media-amazon.com/images/I/61L3qoTLnVL._AC_SX679_.jpg","https://secureservercdn.net/45.40.148.147/lg8.69a.myftpupload.com/wp-content/uploads/2021/08/hario-tabletop-coffee-siphon-bottom__87860.1597184240.jpg?time=1632536172","https://secureservercdn.net/45.40.148.147/lg8.69a.myftpupload.com/wp-content/uploads/2021/08/hario-tabletop-coffee-siphon-bulb__10594.1597184240.jpg?time=1632536172","https://secureservercdn.net/45.40.148.147/lg8.69a.myftpupload.com/wp-content/uploads/2021/08/s-l1600.jpg?time=1632536172"],
         "price":12500,
-        "stock": 20
+        "stock": 6,
+        "category":0
 },
     {
         "id": 5, 
@@ -52,7 +57,8 @@
         "image":"https://m.media-amazon.com/images/I/710uKye7lIL._AC_SX679_.jpg",
         "images":["https://m.media-amazon.com/images/I/710uKye7lIL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/91OUdZvkFVL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/91ZbQQRMDML._AC_SX679_.jpg","https://m.media-amazon.com/images/I/91LU4NmG2hL._AC_SX679_.jpg"], 
         "price":12600,
-        "stock": 20
+        "stock": 9,
+        "category":0
 },
     {
         "id": 6, 
@@ -61,7 +67,8 @@
         "image":"https://m.media-amazon.com/images/I/71qipRLK7nL._AC_SX679_.jpg",
         "images":["https://m.media-amazon.com/images/I/81BjT5iepPL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/71isu1q2G6L._AC_SY879_.jpg","https://m.media-amazon.com/images/I/712GuMVt2nL._AC_SY879_.jpg","https://m.media-amazon.com/images/I/818A0QmzXeL._AC_SX679_.jpg"], 
         "price":2290,
-        "stock": 20
+        "stock": 7,
+        "category":0
 },
 {
         "id": 7, 
@@ -70,7 +77,8 @@
         "image":"https://m.media-amazon.com/images/I/61nx33CGj0S._AC_SX679_.jpg",
         "images":["https://m.media-amazon.com/images/I/61nx33CGj0S._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61SQB8qAAkS._AC_SX679_.jpg","https://m.media-amazon.com/images/I/71RJGRhE6IS._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61D2wx27gLS._AC_SX679_.jpg"], 
         "price":8360,
-        "stock": 20
+        "stock": 3,
+        "category":0
 },
     {
         "id": 8, 
@@ -79,7 +87,8 @@
         "image":"https://m.media-amazon.com/images/I/61Ct2LDoMiL._AC_SX679_.jpg", 
         "images":["https://m.media-amazon.com/images/I/61fWy6Yev9L._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61rfArm0kLL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61fWy6Yev9L._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61izUF7YWzL._AC_SX679_.jpg"],
         "price":850,
-        "stock": 20
+        "stock": 11,
+        "category":0
 },
     {
         "id": 9, 
@@ -88,7 +97,8 @@
         "image":"https://m.media-amazon.com/images/I/81CQH1GiBtL._AC_SX679_.jpg", 
         "images":["https://m.media-amazon.com/images/I/81CQH1GiBtL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61Bu4XT8QyL._AC_SY879_.jpg","https://m.media-amazon.com/images/I/61+GyQFdw3L._AC_SX679_.jpg","https://m.media-amazon.com/images/I/71OKoY7nirL._AC_SY879_.jpg"],
         "price":4290,
-        "stock": 20
+        "stock": 10,
+        "category":1
 },
     {
         "id": 10, 
@@ -97,7 +107,8 @@
         "image":"https://m.media-amazon.com/images/I/61q-mNkZHqL._AC_SX679_.jpg", 
         "images":["https://m.media-amazon.com/images/I/61q-mNkZHqL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/814PVcZxGHL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/71VpdyEBEdL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/814WiVwbKVL._AC_SY879_.jpg"],
         "price":9270,
-        "stock": 20
+        "stock": 18,
+        "category":1
 },
     {
         "id": 11, 
@@ -106,7 +117,8 @@
         "image":"https://m.media-amazon.com/images/I/71eBibyUbvL._AC_SX679_.jpg", 
         "images":["https://m.media-amazon.com/images/I/71eBibyUbvL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/91KWLLdL-TL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/51V+LP9sbVL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/91HxXEhGrlL._AC_SX679_.jpg"],
         "price":4990,
-        "stock": 20
+        "stock": 14,
+        "category":1
 },
     {
         "id": 12, 
@@ -115,7 +127,8 @@
         "image":"https://m.media-amazon.com/images/I/51ejiOLYFCL._AC_SX679_.jpg", 
         "images":["https://m.media-amazon.com/images/I/51ejiOLYFCL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/71PegFfpA5L._AC_SX679_.jpg","https://m.media-amazon.com/images/I/41h39chcNeL._AC_.jpg","https://m.media-amazon.com/images/I/51ejiOLYFCL._AC_SX679_.jpg"],
         "price":5990,
-        "stock": 20
+        "stock": 7,
+        "category":1
 },
     {
         "id": 13, 
@@ -123,7 +136,9 @@
         "description":"Disfruta de un momento de indulgencia gracias a este espumador de cristal para leche LATTEO. Este ingenioso y pequeño aparato aporta el toque final a tu café con su rica y sabrosa espuma.", 
         "image":"https://m.media-amazon.com/images/I/814HjtbHg+L._AC_SX679_.jpg", 
         "images":["https://m.media-amazon.com/images/I/814HjtbHg+L._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61OGb7uGz4L._AC_SY879_.jpg","https://m.media-amazon.com/images/I/71o1ZJ0EI7L._AC_SY879_.jpg","https://m.media-amazon.com/images/I/61DcX8sipDL._AC_SY879_.jpg"],
-        "price":2460
+        "price":2460,
+        "stock": 2,
+        "category":1
 },
     {
         "id": 14, 
@@ -131,7 +146,9 @@
         "description":"Transforma tu taza diaria de café en una especialidad de cafetería con nuestro espumador de leche Bodum BISTRO. Este mágico espumador garantiza que todas tus bebidas favoritas estarán al alcance de tu mano, cuando te apetezcan.", 
         "image":"https://m.media-amazon.com/images/I/71gRKdca4sL._AC_SX679_.jpg",
         "images":["https://m.media-amazon.com/images/I/912qDAkY5bL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/71cn+6DF6fL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/71epA3JUAWL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/712XcLuD1VL._AC_SX679_.jpg"],
-        "price":7250
+        "price":7250,
+        "stock": 9,
+        "category":1
 },
     {
         "id": 15, 
@@ -139,7 +156,9 @@
         "description":"Esta caldera eléctrica es una herramienta esencial para los conocedores del café. El hervidor de agua de cuello de cisne MELIOR es la clave para disfrutar de un café excepcional en casa. Diseñado especialmente para verter con precisión, es la caldera ideal para el café por goteo.", 
         "image":"https://m.media-amazon.com/images/I/71iBRcNOaWL._AC_SX679_.jpg", 
         "images":["https://m.media-amazon.com/images/I/71iBRcNOaWL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61z1zuwN3iL._AC_SY879_.jpg","https://m.media-amazon.com/images/I/61Dsxy94qVL._AC_SY879_.jpg","https://m.media-amazon.com/images/I/61YVBU2xAvL._AC_SY879_.jpg"],
-        "price":6290
+        "price":6290,
+        "stock": 14,
+        "category":2
 },
     {
         "id": 16, 
@@ -147,7 +166,9 @@
         "description":"Dale vida a tu colección de vasos con este juego de tazas de porcelana con funda de corcho. Estos vasos de pared simple están envueltos en una banda de corcho que los hace fáciles de agarrar y protege sus dedos cuando maneja líquidos calientes.", 
         "image":"https://m.media-amazon.com/images/I/912qDAkY5bL._AC_SX679_.jpg", 
         "images":["https://m.media-amazon.com/images/I/912qDAkY5bL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/81j799YjkKL._AC_SY879_.jpg","https://m.media-amazon.com/images/I/81gsdeRyFDL._AC_SY879_.jpg","https://m.media-amazon.com/images/I/912qDAkY5bL._AC_SX679_.jpg"],
-        "price":1260
+        "price":1260,
+        "stock": 32,
+        "category":2
 },
     {
         "id": 17, 
@@ -155,7 +176,9 @@
         "description":"Cuando la elegancia y la practicidad son necesarias con respeto al medio ambiente. Cualquier producto puede ser el lema de la marca, que, para saber que un diseño exitoso tiene que ser simple y funcional al mismo tiempo? Este hermoso juego de 2 tazas Pavina con corcho al mismo tiempo un experto y el amante de la naturaleza en usted amará. La tira de corcho natural de los bosques mediterráneos adyacentes a nuestra Planta es un muy buen agarre y sobre todo para evitar quemarse los dedos durante los que disfrutan de su bebida caliente favorita. El vidrio está hecho de borosilicato de alta calidad, resistente al calor (hasta 350 grados) e inodoro (no tomar el sabor de alimentos o bebidas.", 
         "image":"https://m.media-amazon.com/images/I/61X4IIja78L._AC_SX679_.jpg", 
         "images":["https://m.media-amazon.com/images/I/61X4IIja78L._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61dVUfDTwYL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61hWWoioDWL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61X4IIja78L._AC_SX679_.jpg"],
-        "price":1550
+        "price":1550,
+        "stock": 28,
+        "category":2
 },
     {
         "id": 18, 
@@ -163,7 +186,9 @@
         "description":"Diseñados especialmente para uso en exteriores, el juego de vasos de doble pared PAVINA OUTDOOR es un complemento estiloso para incorporar a tu equipo de barbacoa y picnic. Claros como el agua para la vista y ligeros para el tacto, los vasos aportan la belleza y la claridad del cristal pero no su fragilidad.", 
         "image":"https://m.media-amazon.com/images/I/61LvFPW3ssL._AC_SX679_.jpg", 
         "images":["https://m.media-amazon.com/images/I/61LvFPW3ssL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61JeAtpvPAL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61gq7K69nML._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61rht6+WQDL._AC_SY879_.jpg"],
-        "price":1960
+        "price":1960,
+        "stock": 6,
+        "category":2
 },
     {
         "id": 19, 
@@ -171,7 +196,45 @@
         "description":"Las ocasiones especiales merecen cristalerías especiales. Los vasos  para capuccino de doble pared TITLIS son un acierto seguro para sorprender a tus invitados. Estos elegantes vasos llaman la atención por su diseño exclusivo y su novedosa estructura de doble pared, la cual crea una ilusión óptica al ver el contenido flotando sutilmente en el aire.", 
         "image":"https://m.media-amazon.com/images/I/71cIZsuUpCL._AC_SX679_.jpg", 
         "images":["https://m.media-amazon.com/images/I/71cIZsuUpCL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/61n0AzV-mTL._AC_SX679_.jpg","https://m.media-amazon.com/images/I/51jh-dNFS-L._AC_SX679_.jpg","https://m.media-amazon.com/images/I/81FdKLtZvNL._AC_SX679_.jpg"],
-        "price":1830
+        "price":1830,
+        "stock": 8,
+        "category":2
+},
+    {
+        "id": 20, 
+        "title": "Café en grano Amor perfecto lata 300g", 
+        "description":"El café Amor perfecto es un café de especialidad de origen colombiano. Viene en presentación de 300 gramos de café en grano tostado en una lata sellada práctica y elegante, ideal para un reglo", 
+        "image":"https://secureservercdn.net/45.40.148.147/lg8.69a.myftpupload.com/wp-content/uploads/2021/07/0001250_cafe-tostado-grano-lata-250grs-amor-perfecto_550.jpeg?time=1632776099", 
+        "price":990,
+        "stock": 32,
+        "category":3
+},
+    {
+        "id": 21, 
+        "title": "Café en grano Caffitaly Intenso 1K", 
+        "description":"Este café en grano tostado es de la marca Caffitaly, que se destaca por la atención al detalle, por el buen gusto y el compromiso con los mas altos estándares de fabricación. Sus granos son especialmente seleccionados para que obtengas el mejor resultado en cada taza que te prepares", 
+        "image":"https://secureservercdn.net/45.40.148.147/lg8.69a.myftpupload.com/wp-content/uploads/2021/03/Cafe-en-grano-Caffitaly-Intenso-1-2.png?time=1632776099", 
+        "price":1000,
+        "stock": 28,
+        "category":3
+},
+    {
+        "id": 22, 
+        "title": "Frida Kahlo Pack Regalo x2 Café en grano colombiano", 
+        "description":"Este pack es el regalo ideal para cualquier amante del café. Presentación en una caja floreada que contiene 2 paquetes de café tostado en grano de especialidad Amor perfecto, edición mujeres Frida Kahlo. De origen Colombiano.", 
+        "image":"https://secureservercdn.net/45.40.148.147/lg8.69a.myftpupload.com/wp-content/uploads/2021/07/2.png?time=1632776099", 
+       "price": 3000,
+        "stock": 6,
+        "category":3
+},
+    {
+        "id": 23, 
+        "title": "Café en grano CULTO Yararacusú 250g", 
+        "description":"En la región de Paraná, sobre el Trópico de Capricornio, crecen las tres variedades de este café carismático. Allí, los fríos inviernos subtropicales dilatan la maduración del fruto, dando como resultado un sabor dulce mascabo y fermentadas reminiscencias taninas.", 
+        "image":"https://secureservercdn.net/45.40.148.147/lg8.69a.myftpupload.com/wp-content/uploads/2021/05/3-3.jpg?time=1632776099", 
+        "price": 425,
+        "stock": 8,
+        "category":3
 }
     ],
 
