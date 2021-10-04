@@ -1,5 +1,4 @@
 import React from 'react'
-import "./ItemImgGallery.css"
 
 function ItemImgGallery(prop) {
     const imgs = document.querySelectorAll('.img-select a');

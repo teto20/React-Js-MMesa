@@ -5,7 +5,7 @@ import ItemImgGallery from '../ItemImgGallery/ItemImgGallery';
 import ItemDetailContent from '../ItemDetailContent/ItemDetailContent';
 
 const ItemDetail = (props) => {
-    console.log(`ItemDetail  + ${JSON.stringify(props)}`)
+
     return (
         <div className="card-wrapper">
             {props.loader ? 

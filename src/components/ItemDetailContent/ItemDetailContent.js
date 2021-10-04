@@ -2,6 +2,14 @@ import * as React from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 
 function ItemDetailContent(prop) {
+
+    const [quantityToAdd, SetQuantityToAdd] = React.useState(0);
+
+    function addToCart(counter, e) {
+        e.preventDefault();
+        SetQuantityToAdd(counter)
+    }
+
     return (
         <div className = "product-content">
             <h2 className = "product-title">{prop.product.title}</h2>
@@ -13,7 +21,8 @@ function ItemDetailContent(prop) {
                 <h2>Descripción: </h2>
                 <p>{prop.product.description}</p>
             </div>
-            <ItemCount stock={prop.product.stock} initial={1} />
+            <ItemCount stock={prop.product.stock} initial={1} addToCart={addToCart}/>
+            {console.log(` la cantidad en itemdetail content es ${quantityToAdd}`)}
         </div>
     )
 }
