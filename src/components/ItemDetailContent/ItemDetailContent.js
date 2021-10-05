@@ -1,14 +1,21 @@
 import * as React from 'react';
+import { useContext } from 'react';
+import { CartContext } from '../Context/CartContext';
 import ItemCount from '../ItemCount/ItemCount';
 
 function ItemDetailContent(prop) {
 
     const [quantityToAdd, SetQuantityToAdd] = React.useState(0);
 
-    function addToCart(counter, e) {
+    const {addItem, cart} = useContext(CartContext)
+
+    function addToCart(e, counter) {
         e.preventDefault();
         SetQuantityToAdd(counter)
+        addItem({...prop.product, quantity: counter})
     }
+
+    console.log(cart)
 
     return (
         <div className = "product-content">
@@ -22,7 +29,6 @@ function ItemDetailContent(prop) {
                 <p>{prop.product.description}</p>
             </div>
             <ItemCount stock={prop.product.stock} initial={1} addToCart={addToCart}/>
-            {console.log(` la cantidad en itemdetail content es ${quantityToAdd}`)}
         </div>
     )
 }

@@ -9,22 +9,25 @@ import Category from "./components/pages/Category";
 import Carrito from "./components/pages/Carrito";
 import NotFound from "./components/pages/NotFound";
 import ProductoDetail from "./components/pages/ProductDetail";
+import { CartProvider } from "./components/Context/CartContext";
 
 function App () {
   return (
-    <BrowserRouter>
-        <NavBar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/tienda" component={Tienda} />
-          <Route exact path="/nosotros" component={Nosotros} />
-          <Route exact path="/product/:id" component={ProductoDetail} />
-          <Route exact path="/category/:id" component={Category} />
-          <Route exact path="/cart" component={Carrito} />
-          <Route path="*" component={NotFound} />
-        </Switch>
-        <Footer />
-    </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+          <NavBar />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/tienda" component={Tienda} />
+            <Route exact path="/nosotros" component={Nosotros} />
+            <Route exact path="/product/:id" component={ProductoDetail} />
+            <Route exact path="/category/:id" component={Category} />
+            <Route exact path="/cart" component={Carrito} />
+            <Route path="*" component={NotFound} />
+          </Switch>
+          <Footer />
+      </BrowserRouter>
+    </CartProvider>
   );
 };
 
