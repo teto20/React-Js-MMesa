@@ -2,6 +2,7 @@ import * as React from "react";
 import HomeCarousel from "../../components/HomeCarousel/HomeCarousel";
 import HomeCategory from "../../components/HomeCategory/HomeCategory";
 import "./HomePageContainer.css";
+import { getFirestore } from "../../firebase"
 
 const HomePageContainer = () => {
 
@@ -10,20 +11,21 @@ const HomePageContainer = () => {
     const [error, setError] =  React.useState(null);
 
     React.useEffect(() => {
-        const url="http://localhost:3001/categorias";
+        const db = getFirestore();
+        const caregoriesCollection = db.collection("categorias");
 
         setCargando(true);
-        fetch(url)
-            .then((response) => {
-                if (response.ok) {
-                    return response.json();
-                } else {
-                    throw response;
-                }
-            })
-            .then((caregories) => setCaregories(caregories))
-            .catch((error) => setError(error))
-            .finally(() => setCargando(false));
+        caregoriesCollection
+        .get()
+        .then((querySnapshot) => {
+            if(querySnapshot.empty) {
+                console.log("No tenemos datos")
+            } else {
+                setCaregories(querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+            }
+        } )
+        .catch((error) => setError(error))
+        .finally(() => setCargando(false))
     }, []);
 
     return (

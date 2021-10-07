@@ -4,11 +4,13 @@
     flex-direction: column;
     justify-content: center;
     border: 1px solid;
+    border-radius: 5%;
     width: 15vw;
     margin-bottom: 2vh;
     margin-left: 1vw;
     padding-left: 0.5vw;
     padding-right: 0.5vw;
+
 }
 
 .itemCardImg {

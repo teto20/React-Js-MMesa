@@ -19,7 +19,7 @@ function ItemCount({stock, initial, addToCart}) {
             <button className = "btnItemCount" onClick={decQty}>-</button>
             <p className= "cantidad">{counter}</p>
             <button className = "btnItemCount" onClick={incQty}>+</button>
-            <button className="btnAddToCart" onClick={(e) => addToCart(e, counter)}>Agregar al carrito</button>
+            <div className="btnPdp btnAddToCart" onClick={(e) => addToCart(e, counter)}>Agregar al carrito</div>
         </div>
     )
 }

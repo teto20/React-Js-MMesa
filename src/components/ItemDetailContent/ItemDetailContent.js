@@ -2,20 +2,23 @@ import * as React from 'react';
 import { useContext } from 'react';
 import { CartContext } from '../Context/CartContext';
 import ItemCount from '../ItemCount/ItemCount';
+import {Link} from 'react-router-dom'
 
 function ItemDetailContent(prop) {
 
     const [quantityToAdd, SetQuantityToAdd] = React.useState(0);
+    const [isAddedToCart, setIsAddedToCart] = React.useState(false);
 
     const {addItem, cart} = useContext(CartContext)
 
     function addToCart(e, counter) {
+        setIsAddedToCart(true);
         e.preventDefault();
-        SetQuantityToAdd(counter)
-        addItem({...prop.product, quantity: counter})
+        SetQuantityToAdd(counter);
+        addItem({...prop.product, quantity: counter});
     }
 
-    console.log(cart)
+    console.log(`este es el console log del cart ${cart}`)
 
     return (
         <div className = "product-content">
@@ -28,7 +31,19 @@ function ItemDetailContent(prop) {
                 <h2>Descripción: </h2>
                 <p>{prop.product.description}</p>
             </div>
-            <ItemCount stock={prop.product.stock} initial={1} addToCart={addToCart}/>
+            {
+                !isAddedToCart ?
+
+                <ItemCount stock={prop.product.stock} initial={1} addToCart={addToCart} isAddedToCart={isAddedToCart} /> :
+
+                
+                    <div className = "contenedorBtns">  
+                        <Link exact to="/cart">
+                            <div className="btnPdpGoToCart btnGoToCart">Continiar al carrito</div>
+                        </Link>
+                    </div>
+            }
+            
         </div>
     )
 }

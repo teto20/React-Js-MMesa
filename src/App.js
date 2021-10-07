@@ -2,16 +2,18 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
 import {BrowserRouter, Route, Switch} from "react-router-dom"
-import Home from "./components/pages/Home";
-import Tienda from "./components/pages/Tienda";
-import Nosotros from "./components/pages/Nosotros";
-import Category from "./components/pages/Category";
-import Carrito from "./components/pages/Carrito";
-import NotFound from "./components/pages/NotFound";
-import ProductoDetail from "./components/pages/ProductDetail";
-import { CartProvider } from "./components/Context/CartContext";
+import Home from "./pages/Home";
+import Tienda from "./pages/Tienda";
+import Nosotros from "./pages/Nosotros";
+import Category from "./pages/Category";
+import Carrito from "./pages/Carrito";
+import NotFound from "./pages/NotFound";
+import ProductoDetail from "./pages/ProductDetail";
+import { CartProvider } from "../src/components/Context/CartContext";
+import React from "react";
 
 function App () {
+
   return (
     <CartProvider>
       <BrowserRouter>
