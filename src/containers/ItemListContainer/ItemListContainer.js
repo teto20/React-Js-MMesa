@@ -4,20 +4,23 @@ import "./ItemListContainer.css";
 import { getFirestore } from "../../firebase"
 
 const ItemListContainer = (category) => {
-    const[items, setItems] = React.useState([]);
+    const [items, setItems] = React.useState([]);
     const [cargando, setCargando] = React.useState(false);
     const [error, setError] =  React.useState(null);
 
     React.useEffect(() => {
         const db = getFirestore();
         const productCollection = db.collection("products");
-        console.log(category); 
-        if(Array.isArray(category) && !category.length){
-            const productWithCategoryCollection = productCollection.where("category","==", category)
+        const productWithCategoryCollection = db.collection("products")//.where("category", "==", category.category);
+
+        console.log(productWithCategoryCollection)
+        if(category.id != undefined){
         setCargando(true);
+
         productWithCategoryCollection
         .get()
         .then((querySnapshot) => {
+            console.log(querySnapshot);
             if(querySnapshot.empty) {
                 console.log("No tenemos datos")
             } else {

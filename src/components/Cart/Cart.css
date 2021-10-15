@@ -1,0 +1,87 @@
+.CartContainer {
+    min-height: 86vh;
+    --def: white; 	
+	--inv: black;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	width: 100%;
+}
+
+.TituloCarrito{
+	margin-top: 4vh;
+	margin-bottom: 2vh;
+}
+
+.imgItemCartContainer {
+	width: 6vw;
+	aspect-ratio: 1 / 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.imgItemCart{
+	height: 10vh;
+	width: auto;
+}
+
+.tituloItemCart{
+	width: 25vw;
+	text-align: left;
+}
+
+.cantidadItemCart{
+	width: auto;
+	text-align: left;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+}
+
+.precioItemCart{
+	width: auto;
+	text-align: left;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+}
+
+.totalItemCart{
+	width: auto;
+	text-align: left;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+}
+
+.accionItemCart{
+	width: auto;
+	text-align: left;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+}
+.tablaProductosCart td {
+	 border-bottom: 1px solid black;
+}
+
+.btnRemove{
+	cursor: pointer;
+	position: fixed;
+}
+
+.cantidadProducto{
+	text-align: center;
+}
+
+.precioProducto{
+	text-align: center;
+}
+
+.TotalProducto{
+	text-align: center;
+}
+

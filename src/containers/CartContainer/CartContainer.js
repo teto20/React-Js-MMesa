@@ -8,8 +8,11 @@ const CartContainer = () => {
 
     const {cart, deleteItem} = useContext(CartContext)
 
+
+    console.log(`log del cartContainer ${cart}`)
     if (cart.length === 0 ) {
         return (
+            
             <EmptyCart />
         )
     } else {
@@ -20,3 +23,4 @@ const CartContainer = () => {
 }
 
 export default CartContainer
+

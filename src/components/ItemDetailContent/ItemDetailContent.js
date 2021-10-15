@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { CartContext } from '../Context/CartContext';
 import ItemCount from '../ItemCount/ItemCount';
 import {Link} from 'react-router-dom'
+import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 
 function ItemDetailContent(prop) {
 
@@ -36,12 +37,14 @@ function ItemDetailContent(prop) {
 
                 <ItemCount stock={prop.product.stock} initial={1} addToCart={addToCart} isAddedToCart={isAddedToCart} /> :
 
-                
-                    <div className = "contenedorBtns">  
-                        <Link exact to="/cart">
-                            <div className="btnPdpGoToCart btnGoToCart">Continiar al carrito</div>
-                        </Link>
+                <ErrorBoundary>
+                    <div className = "contenedorBtns">
+                        
+                            <Link exact to="/cart">
+                                <div className="btnPdpGoToCart btnGoToCart">Continuar al carrito</div>
+                            </Link>
                     </div>
+                </ErrorBoundary>  
             }
             
         </div>

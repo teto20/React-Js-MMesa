@@ -36,6 +36,7 @@
     text-shadow: 0 0 2em rgba(255,255,255,1);
     color:#FFFFFF;
     background-color:#000000;
+	cursor: pointer;
 }
 /*asdasdasdasddasdasdasd*/
 
@@ -53,6 +54,7 @@
 	-webkit-box-direction: normal;
 	        flex-direction: column;
 	width: 60%;
+	margin: 0 0.2em 0.2em 0;
 }
 
 .btnPdp {		

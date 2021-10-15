@@ -3,6 +3,7 @@ import "./ItemDetail.css";
 import spinner from "../../Media/spinner.svg"
 import ItemImgGallery from '../ItemImgGallery/ItemImgGallery';
 import ItemDetailContent from '../ItemDetailContent/ItemDetailContent';
+import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 
 const ItemDetail = (props) => {
 
@@ -20,8 +21,11 @@ const ItemDetail = (props) => {
             
             {props.product && 
                 <div className="card">
-                            <ItemImgGallery product={props.product} />
-                            <ItemDetailContent product={props.product} />
+                    <ErrorBoundary>
+                        <ItemImgGallery product={props.product} />
+                        <ItemDetailContent product={props.product} />
+                    </ErrorBoundary>
+                    
                 </div>
 
             }
