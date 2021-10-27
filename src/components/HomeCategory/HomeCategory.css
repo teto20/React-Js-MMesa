@@ -1,0 +1,36 @@
+.containerHomeCategory{
+    margin-top: 2vh;
+}
+
+.tituloHomeCategory {
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.8em;
+}
+
+.homeCategories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoryCard{
+    margin: 1vh;
+}
+
+.categoryLink{
+    text-decoration: none;
+}
+
+.categoryImg{
+    border-radius: 10px;
+    aspect-ratio: 1 / 1.2;
+    width: 15vw;
+}
+
+.categoryBody{
+    text-align: center;
+    color: black;
+    font-size: 1.3em;
+    font-weight: 600;
+}
