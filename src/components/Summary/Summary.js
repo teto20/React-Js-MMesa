@@ -1,8 +1,8 @@
 import React from 'react'
 import { useContext } from 'react';
 import { CartContext } from '../Context/CartContext';
-import { getFirestore } from "../../firebase";
 import {Link} from 'react-router-dom';
+import "./Summary.css"
 
 const Summary = (carrito) => {
     const {cart} = useContext(CartContext)
@@ -12,14 +12,12 @@ const Summary = (carrito) => {
     },0);
 
     return (
-        <div>
-            <h2>Orden</h2>
-            <h4>Productos: {cart.length}</h4>
-            <h4>Total: {totalOrder}</h4>
+        <div className="summaryContainer">
+            <h2 className="tituloSummary">Tu Orden</h2>
+            <h3 className="descSummary">Productos: {cart.length}</h3>
+            <h3 className="descSummary">Total $ {totalOrder}</h3>
             <Link className="goToCheckout" to = {`/checkout`}>
-                <button>
-                    Finalizar compra
-                </button>
+                <div className="btnGoToCheckout">Proceder al checkout</div>
             </Link>
             
         </div>

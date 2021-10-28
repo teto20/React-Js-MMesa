@@ -2,8 +2,9 @@ import React from 'react'
 
 const Nosotros = () => {
     return (
-        <div>
+        <div className="CartContainer">
             <h1>Nosotros</h1>
+            <h3>Proximamente habra mas informacion. Disculpen las molestias</h3>
         </div>
     )
 }

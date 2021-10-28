@@ -37,12 +37,19 @@ const Checkout = () => {
         setCart([]);
     }
 
-
-    return (
-        <div>
-            <GuestCheckout />
-        </div>
-    )
+    if(cart.length > 0){
+        return (
+            <div>
+                <GuestCheckout />
+            </div>
+        )
+    } else{
+        return (
+            <div>
+                
+            </div>
+        )
+    }
 }
 
 export default Checkout

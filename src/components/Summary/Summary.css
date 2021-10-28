@@ -1,0 +1,26 @@
+.summaryContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    border-top: solid 1px;
+}
+
+.tituloSummary{
+    padding-right: 5vw
+}
+
+.descSummary{
+    padding-right: 5vw  
+}
+
+.btnGoToCheckout{
+    cursor: pointer;
+    text-align: center
+}
+
+.btnGoToCheckout:hover {
+    color: black;
+}
