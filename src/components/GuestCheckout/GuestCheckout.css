@@ -1,0 +1,31 @@
+.guestCheckoutContainer{
+    display: flex;
+    flex-direction: column;
+    width: 25vw; 
+    padding-top: 5vh
+}
+
+.tituloGuestCheckout {
+    text-align: center
+}
+
+.formGuestCheckout {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGuestCheckout input {
+    height: 4vh;
+    padding-left: 0.5vw;
+}
+
+.formGuestCheckout label {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.btnFinalizarCompra{
+    margin-top: 2vh;
+    height: 4vh;
+    cursor: pointer;
+}

@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { CartContext } from '../Context/CartContext';
 import { getFirestore } from "../../firebase";
 import GuestCheckout from "../../components/GuestCheckout/GuestCheckout";
+import "./Checkout.css"
 
 
 const Checkout = () => {
@@ -39,14 +40,15 @@ const Checkout = () => {
 
     if(cart.length > 0){
         return (
-            <div>
+            <div className="checkoutContainer">
+                <GuestCheckout />
                 <GuestCheckout />
             </div>
         )
     } else{
         return (
             <div>
-                
+
             </div>
         )
     }

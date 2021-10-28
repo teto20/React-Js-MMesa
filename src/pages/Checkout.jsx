@@ -3,9 +3,9 @@ import CheckOut from "../components/Checkout/Checkout";
 
 const Checkout = () => {
     return (
-        <div>
+        <React.Fragment>
             <CheckOut />
-        </div>
+        </React.Fragment>
     )
 }
 

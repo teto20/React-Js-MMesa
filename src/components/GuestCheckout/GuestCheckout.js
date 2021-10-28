@@ -3,6 +3,7 @@ import {useState} from 'react';
 import { useContext } from 'react';
 import { CartContext } from '../Context/CartContext';
 import { getFirestore } from "../../firebase";
+import "./GuestCheckout.css"
 
 const GuestCheckout = () => {
 
@@ -58,9 +59,9 @@ const GuestCheckout = () => {
     }
 
     return (
-        <div>
-            <h2>Checkout como invitado</h2>
-            <form onSubmit={enviarDatos}>
+        <div className="guestCheckoutContainer">
+            <h2 className="tituloGuestCheckout">Checkout como invitado</h2>
+            <form onSubmit={enviarDatos} className="formGuestCheckout">
                 <label for="nombre">Nombre</label>
                 <input 
                     type="text" 
@@ -79,7 +80,7 @@ const GuestCheckout = () => {
                     placeholder="test@email.com" 
                     onChange={handleInputChange} 
                     name="email" />
-                <button>Finalizar la compra</button>
+                <button className="btnFinalizarCompra">Finalizar la compra</button>
             </form>
 
         </div>
