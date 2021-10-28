@@ -2,8 +2,9 @@ import React from 'react'
 import "./Cart.css"
 import { useContext } from 'react';
 import { CartContext } from '../Context/CartContext';
+import {Link} from 'react-router-dom'
 
-const Cart = (carrito, prop) => {
+const Cart = (carrito) => {
 
     const {removeItem} = useContext(CartContext)
 
@@ -32,7 +33,9 @@ const Cart = (carrito, prop) => {
                             <img className="imgItemCart" src = {product.image} alt = {product.title} /> 
                         </td>
                         <td >
-                            <h3>{product.title}</h3>
+                            <Link to = {`/product/${product.id}`}>
+                                <h3>{product.title}</h3>
+                            </Link>
                         </td>
                         <td className="cantidadProducto">
                             <h4>{product.quantity}</h4>
@@ -41,9 +44,9 @@ const Cart = (carrito, prop) => {
                             <h4>$ {product.price}</h4>
                         </td>
                         <td className="TotalProducto"> 
-                            <h4>$ {product.quantity * product.price}</h4>
+                            <h4>$ {product.total}</h4>
                         </td>
-                        <td>
+                        <td className="btnRemoveProducto">
                             <div className="btnRemove" onClick={() => removeItem(product)}>Eliminar</div>
                         </td>
                     </tr>
@@ -51,7 +54,7 @@ const Cart = (carrito, prop) => {
                 
                 )) 
                 
-            }    
+             }    
             </table> 
         </div>
     )

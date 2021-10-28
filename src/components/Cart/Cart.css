@@ -40,37 +40,34 @@
 .cantidadItemCart{
 	width: auto;
 	text-align: left;
-	padding-left: 0.5vw;
-	padding-right: 0.5vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
 }
 
 .precioItemCart{
 	width: auto;
 	text-align: left;
-	padding-left: 0.5vw;
-	padding-right: 0.5vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
 }
 
 .totalItemCart{
 	width: auto;
 	text-align: left;
-	padding-left: 0.5vw;
-	padding-right: 0.5vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
 }
 
 .accionItemCart{
 	width: auto;
 	text-align: left;
-	padding-left: 0.5vw;
-	padding-right: 0.5vw;
-}
-.tablaProductosCart td {
-	 border-bottom: 1px solid black;
+	padding-left: 1vw;
+	padding-right: 1vw;
 }
 
 .btnRemove{
 	cursor: pointer;
-	position: fixed;
+	text-align: center
 }
 
 .cantidadProducto{
@@ -85,3 +82,15 @@
 	text-align: center;
 }
 
+.separadorProductosCart {
+	border-bottom: 1px solid black;
+	width: 100%
+}
+
+.tablaProductosCart a:hover {
+	color: black
+}
+
+.btnRemoveProducto {
+	vertical-align: center;
+}
