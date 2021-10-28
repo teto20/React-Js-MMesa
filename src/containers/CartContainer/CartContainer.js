@@ -2,14 +2,13 @@ import React, { useContext } from 'react'
 import Cart from '../../components/Cart/Cart'
 import { CartContext } from "../../components/Context/CartContext"
 import EmptyCart from '../../components/EmptyCart/EmptyCart'
+import Summary from '../../components/Summary/Summary'
 
 
 const CartContainer = () => {
 
-    const {cart, deleteItem} = useContext(CartContext)
+    const {cart, deleteItem} = useContext(CartContext);
 
-
-    console.log(`log del cartContainer ${cart}`)
     if (cart.length === 0 ) {
         return (
             
@@ -17,10 +16,15 @@ const CartContainer = () => {
         )
     } else {
         return (
-            <Cart carrito={cart}/>
+            <div>
+                <Cart carrito={cart}/>
+                <Summary />   
+            </div>
         )
     }
 }
 
 export default CartContainer
+
+
 

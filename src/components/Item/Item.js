@@ -8,12 +8,14 @@ const Item = ({ id, title, description, image, price }) => {
         <Link to = {`/product/${id}`}>
           <img className="itemCardImg" src={image} alt={title} />
         </Link>
-        <div className="itemCardBody">
-            <h3 className="itemCardTitle">{title}</h3>
-            <p className="itemCardDesc">{description}</p>
-            <p className="itemCardPrice">{`$ ${price}`}</p>
-            <button className="itemCardBtn">Agregar al carrito</button>
-        </div>
+        <Link to = {`/product/${id}`}>
+          <div className="itemCardBody">
+              <h3 className="itemCardTitle">{title}</h3>
+              <p className="itemCardDesc">{description}</p>
+              <p className="itemCardPrice">{`$ ${price}`}</p>
+          </div>
+        </Link>
+
     </div>
   );
 };

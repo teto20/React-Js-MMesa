@@ -8,18 +8,18 @@ import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 function ItemDetailContent(prop) {
 
     const [quantityToAdd, SetQuantityToAdd] = React.useState(0);
+    const [totalItem, SetTotalItem] = React.useState(0);
     const [isAddedToCart, setIsAddedToCart] = React.useState(false);
 
     const {addItem, cart} = useContext(CartContext)
+
 
     function addToCart(e, counter) {
         setIsAddedToCart(true);
         e.preventDefault();
         SetQuantityToAdd(counter);
-        addItem({...prop.product, quantity: counter});
+        addItem({...prop.product, quantity: counter, total: prop.product.price*counter });
     }
-
-    console.log(`este es el console log del cart ${cart}`)
 
     return (
         <div className = "product-content">

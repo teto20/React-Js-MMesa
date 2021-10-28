@@ -1,57 +1,61 @@
 import * as React from "react";
 import ItemList from "../../components/ItemList/ItemList";
 import "./ItemListContainer.css";
-import { getFirestore } from "../../firebase"
+import { getFirestore } from "../../firebase";
 
-const ItemListContainer = (category) => {
-    const [items, setItems] = React.useState([]);
-    const [cargando, setCargando] = React.useState(false);
-    const [error, setError] =  React.useState(null);
+const ItemListContainer = ({ category }) => {
+  const [items, setItems] = React.useState([]);
+  const [cargando, setCargando] = React.useState(false);
+  const [error, setError] = React.useState(null);
 
-    React.useEffect(() => {
-        const db = getFirestore();
-        const productCollection = db.collection("products");
-        const productWithCategoryCollection = db.collection("products")//.where("category", "==", category.category);
+  React.useEffect(() => {
+    const db = getFirestore();  
 
-        console.log(productWithCategoryCollection)
-        if(category.id != undefined){
-        setCargando(true);
+    console.log(category);
+    if (category) {
+      const productWithCategoryCollection = db
+        .collection("products")
+        .where("category", "==", Number(category));
+      setCargando(true);
 
-        productWithCategoryCollection
+      productWithCategoryCollection
         .get()
-        .then((querySnapshot) => {
-            console.log(querySnapshot);
-            if(querySnapshot.empty) {
-                console.log("No tenemos datos")
-            } else {
-                setItems(querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
-            }
-        } )
-        .catch((error) => setError(error))
-        .finally(() => setCargando(false))
-        } else {
+        .then(querySnapshot => {
+          console.log(querySnapshot);
+          if (querySnapshot.empty) {
+            console.log("No tenemos datos");
+          } else {
+            setItems(
+              querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }))
+            );
+          }
+        })
+        .catch(error => setError(error))
+        .finally(() => setCargando(false));
+    } else {
+      setCargando(true);
+      const productCollection = db.collection("products")
+        .get()
+        .then(querySnapshot => {
+          if (querySnapshot.empty) {
+            console.log("No tenemos datos");
+          } else {
+            setItems(
+              querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }))
+            );
+          }
+        })
+        .catch(error => setError(error))
+        .finally(() => setCargando(false));
+    }
+  }, [category]);
 
-            setCargando(true);
-            productCollection
-            .get()
-            .then((querySnapshot) => {
-                if(querySnapshot.empty) {
-                    console.log("No tenemos datos")
-                } else {
-                    setItems(querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
-                }
-            } )
-            .catch((error) => setError(error))
-            .finally(() => setCargando(false))
-        }      
-    }, [category]);
-
-    return (
-        <div className="itemListContainer">
-            <ItemList productList={items} loader={cargando} error={error} />
-        </div>
-    );
-} 
+  return (
+    <div className="itemListContainer">
+      <ItemList productList={items} loader={cargando} error={error} />
+    </div>
+  );
+};
 
 export default ItemListContainer;
 
@@ -60,7 +64,7 @@ export default ItemListContainer;
 // React.useEffect(() => {
 //     const url = prop.category ? `http://localhost:3001/productos?category=${prop.category}` : `http://localhost:3001/productos`;
 
-//     
+//
 //     fetch(url)
 //         .then((response) => {
 //             if (response.ok) {
