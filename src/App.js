@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import ProductoDetail from "./pages/ProductDetail";
 import { CartProvider } from "../src/components/Context/CartContext";
 import React from "react";
+import Checkout from "./pages/Checkout";
 
 function App () {
 
@@ -25,6 +26,7 @@ function App () {
             <Route exact path="/product/:id" component={ProductoDetail} />
             <Route exact path="/category/:id" component={Category} />
             <Route exact path="/cart" component={Carrito} />
+            <Route exact path="/checkout" component={Checkout} />
             <Route path="*" component={NotFound} />
           </Switch>
           <Footer />
