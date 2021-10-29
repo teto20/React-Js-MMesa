@@ -11,7 +11,6 @@ const ItemListContainer = ({ category }) => {
   React.useEffect(() => {
     const db = getFirestore();  
 
-    console.log(category);
     if (category) {
       const productWithCategoryCollection = db
         .collection("products")
