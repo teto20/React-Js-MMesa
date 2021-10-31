@@ -34,6 +34,7 @@ const ItemListContainer = ({ category }) => {
     } else {
       setCargando(true);
       const productCollection = db.collection("products")
+        productCollection
         .get()
         .then(querySnapshot => {
           if (querySnapshot.empty) {
@@ -49,6 +50,7 @@ const ItemListContainer = ({ category }) => {
     }
   }, [category]);
 
+  console.log(items)
   return (
     <div className="itemListContainer">
       <ItemList productList={items} loader={cargando} error={error} />
@@ -57,22 +59,3 @@ const ItemListContainer = ({ category }) => {
 };
 
 export default ItemListContainer;
-
-//const url='http://localhost:3001/productos';
-
-// React.useEffect(() => {
-//     const url = prop.category ? `http://localhost:3001/productos?category=${prop.category}` : `http://localhost:3001/productos`;
-
-//
-//     fetch(url)
-//         .then((response) => {
-//             if (response.ok) {
-//                 return response.json();
-//             } else {
-//                 throw response;
-//             }
-//         })
-//         .then((items) => setItems(items))
-//         .catch((error) => setError(error))
-//         .finally(() => setCargando(false));
-// }, [prop.category]);

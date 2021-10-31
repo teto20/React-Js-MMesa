@@ -37,11 +37,9 @@ const GuestCheckout = () => {
         ordersCollection
         .add(newOrder)
         .then((querySnapshot) => {
-            console.log(querySnapshot);
             if (querySnapshot.empty) {
               console.log("No hay ordenes");
             } else {
-                console.log(querySnapshot.id)
                 setCompra(querySnapshot.id);
             }
           })

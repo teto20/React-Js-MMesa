@@ -1,0 +1,50 @@
+.confirmationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    padding-top: 2vh;
+    padding-left: 4vw
+}
+
+.confirmationGralInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100vw
+}
+
+.confirmationGralInfo h3 {
+    padding-top: 2vh;
+}
+
+.confirmationGralInfo p {
+    padding-top: 2vh;
+}
+
+.itemContainerOrderConfirmation {
+     display: flex;
+     padding-top: 2vh
+ }
+
+.imgConfirmation {
+    height: 15vh;
+}
+
+.itemContainerOrderConfirmation h3{
+    padding-left: 1vw;
+    padding-right: 1vw
+}
+
+.itemContainerOrderConfirmation p{
+    padding-left: 1vw;
+    padding-right: 1vw
+}
+
+.subTituloOrderConfirmation {
+    padding-top: 5vh !important;
+    padding-bottom: 4vh
+}
